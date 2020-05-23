@@ -2,6 +2,8 @@ import Vue from 'vue';
 import VueRouter, { RouteConfig } from 'vue-router';
 import Home from '../views/Home.vue';
 
+import CreateScheduling from '../components/scheduling/CreateScheduling.vue';
+
 Vue.use(VueRouter);
 
 const routes: Array<RouteConfig> = [
@@ -9,6 +11,11 @@ const routes: Array<RouteConfig> = [
     path: '/',
     name: 'Home',
     component: Home,
+  },
+  {
+    path: '/create-scheduling',
+    name: 'CreateScheduling',
+    component: CreateScheduling,
   },
   {
     path: '/about',

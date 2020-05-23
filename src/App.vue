@@ -1,26 +1,20 @@
 <template>
 <div class="container" id="app">
-
+    
     <NavBar />
-
-    <div class="row">
-        <h2 class="alinhado-ao-centro">Agendamento de Consultas</h2>
+    <hr>
+    <div class="col">
+        <router-view/>
     </div>
-    <div class="row titles-info">
-        <div class="col-sm-6">
-            <h2 class="h2">Coluna 1 Formulario com a pesquisa do paciente para realizar o aagendamento</h2>
-        </div>
-        <div class="col-sm-6">
-            <h2 class="h2">Coluna 2 table com os pcientes agendados</h2>
-        </div>
-    </div>
+    
+    
 </div>
   <!-- <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </div>
-    <router-view/>
+    
   </div> -->
 </template>
 <script>
