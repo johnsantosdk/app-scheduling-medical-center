@@ -4,7 +4,7 @@
     <NavBar />
     <hr>
     <div class="col">
-        <router-view/>
+        <router-view />
     </div>
 
 </div>

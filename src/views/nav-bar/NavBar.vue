@@ -13,7 +13,7 @@
                     <em>Cadastros</em>
                 </template>
                 <b-dropdown-item>
-                    <router-link to="/register/patient">Paciente</router-link>
+                    <router-link :to="{name: 'CreatePatient'}">Paciente</router-link>
                 </b-dropdown-item>
                 <b-dropdown-item>
                     <router-link to="/register/clerk">Atendente</router-link>

@@ -2,6 +2,7 @@ import Vue from 'vue';
 import VueRouter, { RouteConfig } from 'vue-router';
 import Home from '../views/Home.vue';
 
+import Register from '../components/register/Register.vue';
 import CreateScheduling from '../components/scheduling/CreateScheduling.vue';
 import CreatePatient from '../components/patient/CreatePatient.vue';
 import CreateClerk from '../components/functionaries/clerk/CreateClerk.vue';
@@ -23,8 +24,16 @@ const routes: Array<RouteConfig> = [
     name: 'CreateScheduling',
     component: CreateScheduling,
   },
+  // {
+  //   path: '/register/patient',
+  //   name: 'CreatePatient',
+  //   component: CreatePatient,
+  // },
   {
     path: '/register',
+    name: 'register',
+    component: Register,
+
     children: [
       {
         path: 'patient',
