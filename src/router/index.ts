@@ -3,6 +3,12 @@ import VueRouter, { RouteConfig } from 'vue-router';
 import Home from '../views/Home.vue';
 
 import CreateScheduling from '../components/scheduling/CreateScheduling.vue';
+import CreatePatient from '../components/patient/CreatePatient.vue';
+import CreateClerk from '../components/functionaries/clerk/CreateClerk.vue';
+import CreateDoctor from '../components/functionaries/doctor/CreateDoctor.vue';
+import CreateSpecialty from '../components/specialties/CreateSpecialty.vue';
+import CreateHealthInsurance from '../components/health-insurance/CreateHealthInsurance.vue';
+
 
 Vue.use(VueRouter);
 
@@ -16,6 +22,37 @@ const routes: Array<RouteConfig> = [
     path: '/create-scheduling',
     name: 'CreateScheduling',
     component: CreateScheduling,
+  },
+  {
+    path: '/register',
+    children: [
+      {
+        path: 'patient',
+        name: 'CreatePatient',
+        component: CreatePatient,
+      },
+      {
+        path: 'clerk',
+        name: 'CreateClerk',
+        component: CreateClerk,
+      },
+      {
+        path: 'doctor',
+        name: 'CreateDoctor',
+        component: CreateDoctor,
+      },
+      {
+        path: 'specialties',
+        name: 'CreateSpecialties',
+        component: CreateSpecialty,
+      },
+      {
+        path: 'health-insurance',
+        name: 'CreateHealthInsurance',
+        component: CreateHealthInsurance,
+      },
+    ]
+
   },
   {
     path: '/about',

@@ -15,7 +15,7 @@
       <td>Saude Bradesco</td>
       <td>(98) 9 8800-1122</td>
       <td>
-            <button class="btn btn-sm mr-4" :class="classeCSS">
+            <button class="btn btn-sm mr-4">
                 <i class="fa fa-check"></i>
             </button>
       </td>

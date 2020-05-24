@@ -26,7 +26,7 @@
                 <option value="vespertion">Vespertion</option>
             </select>
         </div>
-        <button class="btn btn-secondary btn-lg" id="btn-agendar">Agendar</button>
+        <button class="btn btn-secondary btn-lg" id="btn-agendar" @click.prevent="agendar">Agendar</button>
     </div>
 </form>
 </template>

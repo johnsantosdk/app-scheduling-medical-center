@@ -8,13 +8,13 @@
     <div class="row">
         <ListPatients />
     </div>
+    <hr>
     <div class="row">
         <div class="col-sm-6  conluna-agendamento">
             <FormCreateScheduling />
-            
         </div>
         <div class="col-sm-6  conluna-agendados">
-            <!-- <h2 class="h2">Coluna 2 table com os pcientes agendados</h2> -->
+            <ListScheduling />
         </div>
     </div>
 </div>
@@ -24,12 +24,14 @@
 import FindPatient from '../patient/FindPatient.vue';
 import ListPatients from '../patient/ListPatients.vue';
 import FormCreateScheduling from './FormCreateScheduling.vue';
+import ListScheduling from './ListScheduling.vue';
 
 export default {
     components: {
         FindPatient,
         ListPatients,
-        FormCreateScheduling
+        FormCreateScheduling,
+        ListScheduling
     }
 }
 </script>
