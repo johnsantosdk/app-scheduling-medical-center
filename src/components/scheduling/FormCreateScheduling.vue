@@ -28,15 +28,19 @@
         <b-col sm="3">
             <label for="IdDate">Data:</label>
         </b-col>
-        <b-col sm="4">
-            <b-form-input
+        <b-col sm="9">
+            <b-form-datepicker
+                class="mb-3"
                 id="IdDate"
                 size="sm"
                 type="date"
-            ></b-form-input>
+                local="pt-BR"
+                placeholder="Escolha a data da consulta"
+            ></b-form-datepicker>
         </b-col>
-
-        <b-col sm="2">
+    </b-row>
+    <b-row>
+        <b-col sm="3">
             <label for="IdTur">Horário:</label>
         </b-col>
         <b-col sm="3">

@@ -30,7 +30,7 @@ export default {
 body {
     font-family: 'Montserrat', sans-serif;
     color: #fff;
-    background: linear-gradient(to right, rgb(47, 59, 66), rgb(88, 101, 119));
+    background: linear-gradient(to right, rgb(55, 59, 61), rgb(66, 69, 73));
 }
 
 h2.alinhado-ao-centro {
