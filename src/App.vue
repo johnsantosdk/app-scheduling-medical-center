@@ -1,6 +1,6 @@
 <template>
 <div class="container" id="app">
-    
+    <h2>Ola Ubuntu Brnach</h2>
     <NavBar />
     <hr>
     <div class="col">
@@ -24,7 +24,7 @@ export default {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
-    color: #3e86ce;
+    color: #bdd5ec;
 }
 
 body {
