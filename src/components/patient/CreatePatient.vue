@@ -71,6 +71,28 @@
         <hr>
         <Address />
         <hr>
+        <b-row>
+            <b-col sm="2">
+                <label for="IdCon">Convênio:</label>
+            </b-col>
+            <b-col sm="4">
+                <b-form-select size="sm" @change="getPlanos" v-model="convenio" :options="convenios" class="mb-3">
+                    <template>
+                        <b-form-select-option :value="null" disabled>-- Por Favor Escolha o Convênio --</b-form-select-option>
+                    </template>
+                </b-form-select>
+            </b-col>
+            <b-col sm="2">
+                <label for="IdCon">Plano:</label>
+            </b-col>
+            <b-col sm="4">
+                <b-form-select size="sm" v-model="plano" :options="planos" class="mb-3">
+                    <template>
+                        <b-form-select-option :value="null" disabled>-- Tipo do Plano --</b-form-select-option>
+                    </template>
+                </b-form-select>
+            </b-col>
+        </b-row>
     </b-container>
 </template>
 
@@ -78,9 +100,64 @@
 import Address from '../address/Address';
 
 export default {
-     components: {
-         Address
-     }   
+    components: {
+        Address
+    },
+    data() {
+      return {
+        convenio: null,
+        plano: null,
+        planos: [],
+        convenios: [
+            {id:115, value: 1, text: 'Unimed', 
+                plano: [
+                    {id:1, text:'Valentina'},
+                    {id:2, text:'Carolina'},
+                    {id:3, text:'5 Estrelas'},
+                ]
+            },
+            {id:25, value: 2, text: 'Saude Bradesco',
+                plano: [
+                    {id:1, text:'Master'}, 
+                    {id:2, text:'Califonia'}, 
+                    {id:3, text:'Super Satar'}, 
+                    {id:4, text:'Platina'}
+                ] 
+            },
+            {id:126, value: 3, text: 'Vitallis', 
+                plano: [
+                     {id:1, text:'Diamante'}, 
+                     {id:1, text:'Perola'}, 
+                     {id:1, text:'Rubi'}, 
+                     {id:1, text:'Fenix'}
+                ]  
+            },
+            {id:40, value: 4, text: 'Saude Caixa', 
+                plano: [
+                    {id:1, text:'Preto'}, 
+                    {id:2, text:'Branco'}, 
+                    {id:3, text:'Ouro'}, 
+                    {id:4, text:'Esmeralda'}
+                ]  
+            }
+        ]
+      }
+    },
+    watch: {
+
+    },
+    methods: {
+        getPlanos(valuePlano) {
+            this.convenios.forEach( item => {
+                if(item.value == valuePlano) {
+                    item.plano.forEach(i => { this.planos.push(i)})
+                }
+            })
+        }
+    },
+    created() {
+ 
+    }
 }
 </script>
 
