@@ -1,6 +1,6 @@
 <template>
     <b-container fluid>
-        <b-row>
+        <b-row><!-- Inicio dos campos do paciente -->
             <b-col sm="2">
                 <label for="IdPatientName">Nome:</label>
             </b-col>
@@ -67,11 +67,11 @@
                     placeholder="Digite o RG"
                 ></b-form-input>
             </b-col>
-        </b-row>
+        </b-row><!-- Final dos campos do paciente -->
         <hr>
-        <Address />
+        <Address /><!-- Campos de endereco -->
         <hr>
-        <b-row>
+        <b-row><!-- Inicio dos campos de convenio -->
             <b-col sm="2">
                 <label for="IdCon">Convênio:</label>
             </b-col>
@@ -82,7 +82,7 @@
                     </template>
                 </b-form-select>
             </b-col>
-            <b-col sm="2">
+            <b-col sm="1">
                 <label for="IdCon">Plano:</label>
             </b-col>
             <b-col sm="4">
@@ -91,6 +91,25 @@
                         <b-form-select-option :value="null" disabled>-- Tipo do Plano --</b-form-select-option>
                     </template>
                 </b-form-select>
+            </b-col>
+        </b-row>
+        <b-row>
+            <b-col sm="2" right>
+                <label for="IdMat">Matricula:</label>
+            </b-col>
+            <b-col sm="4">
+                <b-form-input
+                    id="IdMat"
+                    size="sm"
+                    type="text"
+                    placeholder="Digite a matricula do convênio"
+                ></b-form-input>
+            </b-col>
+        </b-row><!-- Final dos campos de convenio -->
+        <hr>
+        <b-row><!-- Botao de cadastro -->
+            <b-col>
+                <b-button variant="outline-primary">Cadastrar</b-button>
             </b-col>
         </b-row>
     </b-container>
@@ -148,6 +167,7 @@ export default {
     },
     methods: {
         getPlanos(valuePlano) {
+            this.planos = []
             this.convenios.forEach( item => {
                 if(item.value == valuePlano) {
                     item.plano.forEach(i => { this.planos.push(i)})
@@ -162,5 +182,8 @@ export default {
 </script>
 
 <style scoped>
-
+label {
+    margin-right: auto;
+    /* background-color: blue; */
+}
 </style>

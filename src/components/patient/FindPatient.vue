@@ -1,31 +1,45 @@
 <template>
-    <form >
-        <div class="row justify-content-md-center form-group form-inline" >
-                <legend>Busca de Paciente</legend>
-                <div class="col-sm-4">
-                    <label >Nome:</label>
-                    <input type="text" id="IdName" class="form-control" placeholder="Digite o nome">
-                </div>
-                <div class="col-sm-3">
-                    <label for="IdCpf">CPF:</label>
-                    <input type="text" id="IdCpf" class="form-control" placeholder="Digite o CPF">
-                </div>
-                <div class="col-sm-2">
-                    <label for="IdNasc">Nascimento:</label>
-                    <input type="date" id="IdNasc" class="form-control">
-                </div>
-                <div class="col-sm-2">
-                    <label for="Idplano">Plano:</label>
-                    <select  class="form-control" id="Idplano">
-                        <option selected disabled>Select one</option>
-                        <option value="">Unihosp</option>
-                        <option value="">Unimed</option>
-                        <option value="">Vitallis</option>
-                    </select>
-                </div>
-                <div class="col-sm-1 mt-4 btn btn-primary">Buscar</div>
-        </div>
-    </form>
+    <b-container>
+        <b-row>
+        <b-col sm="1">
+                <label for="IdNome">Nome:</label>
+            </b-col>
+            <b-col sm="3">
+                <b-form-input
+                id="IdNome"
+                type="text"
+                size="sm"
+                placeholder="Digite o nome"
+                ></b-form-input>
+            </b-col>
+ 
+            <b-col sm="1">
+                <label for="IdCpf">CPF:</label>
+            </b-col>
+            <b-col sm="2">
+                <b-form-input
+                id="IdCpf"
+                type="text"
+                size="sm"
+                placeholder="000.000.00-00"
+                ></b-form-input>
+            </b-col>
+
+            <b-col sm="1">
+                <label for="IdNasc">Nasc.:</label>
+            </b-col>
+            <b-col sm="2">
+                <b-form-input
+                id="IdNasc"
+                type="date"
+                size="sm"
+                ></b-form-input>
+            </b-col>
+            <b-col>
+                <b-button variant="outline-secondary" size="sm">Buscar</b-button>
+            </b-col>
+        </b-row>
+    </b-container>
 </template>
 
 <script>
@@ -35,16 +49,5 @@
 </script>
 
 <style scoped>
-.form-inline {
-    /* background-color: rgb(219, 219, 219); */
-    margin: 10px auto;
-    padding: 10px 50px 10px 10px;
-}
- .form-inline input { 
-    display:inline;
-    background-color: rgb(236, 236, 236);
-} 
-#IdName {
-    width: 300px;
-}    
+   
 </style>

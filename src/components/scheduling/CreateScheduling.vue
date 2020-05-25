@@ -10,10 +10,10 @@
     </div>
     <hr>
     <div class="row">
-        <div class="col-sm-6  conluna-agendamento">
+        <div class="col-sm-6">
             <FormCreateScheduling />
         </div>
-        <div class="col-sm-6  conluna-agendados">
+        <div class="col-sm-6">
             <ListScheduling />
         </div>
     </div>
