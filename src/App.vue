@@ -1,6 +1,6 @@
 <template>
 <div class="container" id="app">
-    <h2>Ola Ubuntu Brnach</h2>
+
     <NavBar />
     <hr>
     <div class="col">
