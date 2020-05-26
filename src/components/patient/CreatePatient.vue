@@ -1,6 +1,6 @@
 <template>
     <b-container fluid>
-        <b-row><!-- Inicio dos campos do paciente -->
+        <b-row class="mb-1"><!-- Inicio dos campos do paciente -->
             <b-col sm="2">
                 <label for="IdPatientName">Nome:</label>
             </b-col>
@@ -14,7 +14,7 @@
                 ></b-form-input>
             </b-col>
         </b-row>
-        <b-row>
+        <b-row class="mb-1">
             <b-col sm="2">
                 <label for="IdPatientEmail">E-mail:</label>
             </b-col>
@@ -23,13 +23,12 @@
                     id="IdPatientName"
                     size="sm"
                     type="email"
-                    :state="false"
                     placeholder="Digite o e-mail"
                     required
                 ></b-form-input>
             </b-col>
         </b-row>
-        <b-row>
+        <b-row class="mb-1">
             <b-col sm="2">
                 <label for="IdPatientNasc">Nascimento:</label>
             </b-col>
@@ -41,7 +40,7 @@
                 ></b-form-input>
             </b-col>
         </b-row>
-        <b-row>
+        <b-row class="mb-1">
             <b-col sm="2">
                 <label for="IdPatientCpf">CPF:</label>
             </b-col>
@@ -55,7 +54,7 @@
                 ></b-form-input>
             </b-col>
         </b-row>
-        <b-row>
+        <b-row class="mb-1">
             <b-col sm="2">
                 <label for="IdPatientRg">RG:</label>
             </b-col>
@@ -71,7 +70,7 @@
         <hr>
         <Address /><!-- Campos de endereco -->
         <hr>
-        <b-row><!-- Inicio dos campos de convenio -->
+        <b-row class="mb-1"><!-- Inicio dos campos de convenio -->
             <b-col sm="2">
                 <label for="IdCon">Convênio:</label>
             </b-col>

@@ -1,6 +1,6 @@
 <template>
 <div>
-    <b-row>
+    <b-row class="mb-1">
         <b-col sm="2">
             <label for="IdCep">CEP:</label>
         </b-col>
@@ -13,7 +13,7 @@
             ></b-form-input>
         </b-col>
     </b-row>
-    <b-row>
+    <b-row class="mb-1">
         <b-col sm="2">
             <label for="IdLog">Logradouro:</label>
         </b-col>
@@ -26,7 +26,7 @@
             ></b-form-input>
         </b-col>
     </b-row>
-    <b-row>
+    <b-row class="mb-1">
         <b-col sm="2">
             <label for="IdComp">Complemento:</label>
         </b-col>
@@ -39,7 +39,7 @@
             ></b-form-input>
         </b-col>
     </b-row>
-    <b-row>
+    <b-row class="mb-1">
         <b-col sm="2">
             <label for="IdBai">Bairro:</label>
         </b-col>
@@ -52,7 +52,7 @@
             ></b-form-input>
         </b-col>
     </b-row>
-    <b-row>
+    <b-row class="mb-1">
         <b-col sm="2">
             <label for="IdCid">Cidade:</label>
         </b-col>
@@ -65,7 +65,7 @@
             ></b-form-input>
         </b-col>
     </b-row>
-    <b-row>
+    <b-row class="mb-1">
         <b-col sm="2">
             <label for="IdEst">Estado:</label>
         </b-col>
